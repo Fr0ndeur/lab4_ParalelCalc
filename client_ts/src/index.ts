@@ -2,11 +2,9 @@ import * as net from "net";
 import * as readline from "readline";
 import { EventEmitter } from "events";
 
-// Server settings
 const PORT = 54000;
 const SERVER_IP = "127.0.0.1";
 
-// TLV Tags
 const TAG_CONFIG = 0x01;
 const TAG_MATRIX = 0x02;
 const TAG_START_PROCESS = 0x03;
@@ -14,7 +12,6 @@ const TAG_STATUS_REQUEST = 0x04;
 const TAG_RESULT = 0x05;
 const TAG_STATUS_RESP = 0x06;
 
-// Status codes
 const STATUS_NOT_STARTED = 0x00;
 const STATUS_IN_PROGRESS = 0x01;
 const STATUS_FINISHED = 0x02;
